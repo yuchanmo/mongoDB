@@ -4,9 +4,9 @@ class MovieManager():
     @staticmethod
     def input_movie_info():
         title = input('Movie Title : ')
-        director = input('Director : ').split(',')
-        genre = input('Genre : ').split(',')
-        score = int(input('score : '))
+        director = input('Director : ')#.split(',')
+        genre = input('Genre : ')#.split(',')
+        score = float(input('score : '))
         return Movie(title,director,genre,score)
     
     @staticmethod
@@ -17,9 +17,10 @@ class MovieManager():
             while inputpredicate:
                 amovie = MovieManager.input_movie_info()
                 movies.append(amovie)
-                return movies
+                inputpredicate = True if input('Try to type more movies?[Y/N]').lower() == 'y' else False
+            return movies
         except:
             return 'Fail to get information'
     
-    
+
             

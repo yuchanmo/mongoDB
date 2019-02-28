@@ -2,11 +2,11 @@ from pymongo import MongoClient
 from abc import ABC,abstractmethod
 from datamodel import Movie
 
-def MongoCollection(ABC):
-    __client = MongoClient()
-    __collection = null    
+class MongoCollection(ABC):
+    _client = MongoClient()
+    _collection = _client.test
     def __init__(self,collection):
-        __collection = __client[collection]
+        self._collection = self._client[collection]
 
     @abstractmethod
     def insert(self,data):
@@ -21,11 +21,34 @@ def MongoCollection(ABC):
         pass
 
 
-def MovieCollection(MongoCollection):
-    
+class MovieCollection(MongoCollection):    
+
+    @property
+    def moviecollection(self):
+        return super()._collection
+
     def insert(self,data):
         try:
-            __collection.insert_one(data)
+            d = dict(data)
+            self._MongoCollection__collection.insert_one(d)
             return data.title
         except:
             return 'fail to insert'
+    
+    def insert_many(self,datas):
+        try:
+            ds = []
+            for d in datas:
+                dd = dict(d)
+                ds.append(dd)
+            
+            super()._collection.insert_many(ds)
+            return [d.title for d.title in datas]
+        except:
+            return 'fail to insert'
+
+    def delete(self,condition):
+        pass
+
+    def update(self,condition,updatecontents):
+        pass

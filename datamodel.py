@@ -7,5 +7,5 @@ class Movie(object):
         self.score = score
 
     def __iter__(self):
-        return self.__dict__.iteritems()
-        #return iter([('Title',self.title),('Director',self.director),('Genre',self.genre),('Score',self.score)])
+        #return self.__dict__.iteritems()
+        return iter([('Title',self.title),('Director',self.director),('Genre',self.genre),('Score',self.score)])
