@@ -1,0 +1,97 @@
+
+{
+	"title": "Interstellar",
+	"director": "Christopher Nolan",
+	"genre": ["Drama", "Adventure","Sci-Fi"],
+	"score": 8.6
+}
+{
+	"title": "Inception",
+	"director": "Christopher Nolan",
+	"genre": ["Action", "Adventure", "Sci-Fi"],
+	"score": 8.8
+}
+{
+	"title": "Frozen",
+	"director": "Chris Buck and Jennifer Lee",
+	"genre": ["Animation", "Adventure", "Comedy"],
+	"score": 7.5
+}
+{
+	"title": "Train to Busan",
+	"director": "Sang-ho Yeon",
+	"genre": ["Action", "Horror", "Thriller"],
+	"score": 7.5
+}
+{
+	"title": "House of the Dead",
+	"director": "Uwe Boll",
+	"genre": ["Action", "Adventure", "Horror"],
+	"score": 2.0
+}
+{
+	"title": "2001: A Space Odyssey",
+	"director": "Stanley Kubrick",
+	"genre": ["Adventure", "Sci-Fi"],
+	"score": 8.3
+}
+{
+	"title": "District 9",
+	"director": "Neill Blomkamp",
+	"genre": ["Sci-Fi", "Thriller"],
+	"score": 7.9
+}
+{
+	"title": "Manos: The Hands of Fate",
+	"director": "Harold P. Warren",
+	"genre": ["Horror"],
+	"score": 1.9
+}
+{
+	"title": "Birdemic: Shock and Terror",
+	"director": "James Nguyen",
+	"genre": ["Horror", "Romance", "Thriller"],
+	"score": 1.8
+}
+{
+	"title": "Alone in the Dark",
+	"director": "Uwe Boll",
+	"genre": ["Action", "Horror", "Sci-Fi"],
+	"score": 2.3
+}
+{
+	"title": "Battlefield Earth",
+	"director": "Roger Christian",
+	"genre": ["Action", "Adventure", "Sci-Fi"],
+	"score": 2.4
+}
+{
+	"title": "Memento",
+	"director": "Christopher Nolan",
+	"genre": ["Mystery", "Thriller"],
+	"score": 8.5
+}
+{
+	"title": "Along With the Gods: The Two Worlds",
+	"director": "Yong-hwa Kim",
+	"genre": ["Action", "Drama", "Fantasy"],
+	"score": 7.3
+}
+{
+	"title": "Along With the Gods: The Last 49 Days",
+	"director": "Yong-hwa Kim",
+	"genre": ["Action", "Drama", "Fantasy"],
+	"score": 6.9
+}
+{
+	"title": "Ant-Man and the Wasp",
+	"director": "Peyton Reed",
+	"genre": ["Action", "Adventure", "Sci-Fi"],
+	"score": 7.4
+}
+{
+	"title": "Ready Player One",
+	"director": "Steven Spielberg",
+	"genre": ["Action", "Adventure", "Sci-Fi"],
+	"score": 7.6
+}

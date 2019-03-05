@@ -1,0 +1,127 @@
+{
+  "buyer" : {
+    "name": "S.J. Kim",
+    "method": "cash"
+  },
+  "items": [
+    {
+      "name": "Apple Watch Series 4",
+      "attribute": {
+        "type": "Silver Aluminum Case with White Sport Band",
+        "size": "40mm",
+        "connectivity": "GPS"
+      },
+      "price": 399
+    },
+    {
+      "name": "iPhone Xs",
+      "attribute": {
+        "type": "Space Gray",
+        "capacity": "64GB",
+        "carrier": "AT&T"
+      },
+      "price": 999
+    }
+  ]
+}
+{
+  "buyer" : {
+    "name": "J.S. Lee",
+    "method": "credit"
+  },
+  "items": [
+    {
+      "name": "Apple Watch Series 4",
+      "attribute": {
+        "type": "Silver Aluminum Case with White Sport Band",
+        "size": "44mm",
+        "connectivity": "GPS + Cellular",
+        "carrier": "T Mobile"
+      },
+      "price": 529
+    }
+  ]
+}
+{
+  "buyer" : {
+    "name": "M.K. Koo",
+    "method": "credit"
+  },
+  "items": [
+    {
+      "name": "Apple Watch Series 4",
+      "attribute": {
+        "type": "Silver Aluminum Case with White Sport Band",
+        "size": "44mm",
+        "connectivity": "GPS + Cellular",
+        "carrier": "Sprint"
+      },
+      "price": 529
+    },
+    {
+      "name": "iPhone Xs",
+      "attribute": {
+        "type": "Space Gray",
+        "capacity": "256GB"
+      },
+      "price": 1149
+    }
+  ]
+}
+{
+  "buyer" : {
+    "name": "S.Y. Kim",
+    "method": "credit"
+  },
+  "items": [
+    {
+      "name": "iPad Pro",
+      "attribute": {
+        "type": "Gold",
+        "size": "12.9-inch",
+        "connectivity": "Wi-Fi",
+        "capacity": "512GB"
+      },
+      "price": 1149
+    },
+    {
+      "name": "iPhone Xs Max",
+      "attribute": {
+        "type": "Silver",
+        "capacity": "512GB",
+        "carrier": "verizon"
+      },
+      "price": 1449
+    },
+    {
+      "name": "Apple Watch Hermès",
+      "attribute": {
+        "type": "Stainless Steel Case with Indigo/Craie/Orange Swift Leather Double Tour",
+        "size": "40mm",
+        "connectivity": "GPS + Cellular",
+        "carrier": "T Mobile"
+      },
+      "price": 1399
+    }
+  ]
+}
+{
+  "buyer" : {
+    "name": "K.S. Kang",
+    "method": "cash"
+  },
+  "items": [
+    {
+      "name": "MacBook Pro",
+      "attribute": {
+        "type": "Space Gray",
+        "size": "15-inch",
+        "connectivity": "Wi-Fi",
+        "processor": "2.6GHz 6-Core Processor",
+        "capacity": "512GB"
+      },
+      "price": 2799
+    }
+  ]
+}
+
