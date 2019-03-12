@@ -46,3 +46,44 @@ res.create_index([('name',pymongo.TEXT)])
 pprint(res.index_information())
 
 pprint(list(res.find({'$text':{'$search':'Kyochon'}},{'borough':1,'name':1,'_id':0})))
+
+
+pprint(res.find({'address.zipcode':{'$gte':'10200','$lte':'10280'}}).explain()['executionStats'])
+
+res.create_index([('addresss.zipcode',1)])
+pprint(res.index_information())
+res.drop_index('name_text')
+pprint(res.find({'address.zipcode':{'$gte':'10200','$lte':'10280'}}).explain()['executionStats'])
+
+pprint(res.find({'grades':{'$elemMatch':{'grade':{'$lte':'B'} }}}).explain()['executionStats'])
+
+
+pprint(list(res.find({'grades.grade':{'$lte':'B'} })))
+
+
+air = db['air']
+zip = db['zip']
+city = list(zip.find({'_id':'10044'}))
+citylist = list(map(lambda x : x['state'],list(city)))
+
+states = list(sta.find({'code':{'$in':citylist}}))#,{'_id':0,'name':1}))
+pprint(states)
+
+
+air.create_index([('loc',pymongo.GEOSPHERE)])
+loc = states[0]['loc']
+pprint(list(air.find({'loc':{'$geoWithin':{'$geometry':loc}},'type':'International'},{'_id':0,'name':1})))
+
+inters = list(air.find({'type':'International'}))
+pprint(inters)
+len(inters)
+
+pprint(res.find_one())
+res.create_index([('address.coord',pymongo.GEO2D)])
+
+for a in inters:
+    print(a['loc'])
+    rr = list(res.find({'address.coord':{'$geoIntersects':{'$geometry':a['loc']}}}))
+    print(rr)
+
+
