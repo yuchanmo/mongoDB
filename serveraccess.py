@@ -10,11 +10,11 @@ def osm():
     db = client.osm 
     return db
 
-pprint(db.list_collection_names())
-ss = list(db.map.find({'properties.admin':'South Korea'}))
-db.map.find({
-    'properties'
-})
+# pprint(db.list_collection_names())
+# ss = list(db.map.find({'properties.admin':'South Korea'}))
+# db.map.find({
+#     'properties'
+# })
 
 
 client.close()
